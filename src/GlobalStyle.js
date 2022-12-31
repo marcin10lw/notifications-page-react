@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
   }
 
   #root {
