@@ -1,5 +1,6 @@
-const notifications = [
+export const notificationsData = [
   {
+    id: 1,
     name: "Mark Webber",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-mark-webber.webp`,
     operation: "reacted to your recent post",
@@ -8,6 +9,7 @@ const notifications = [
     date: "1m ago",
   },
   {
+    id: 2,
     name: "Angela Gray",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-angela-gray.webp`,
     operation: "followed you",
@@ -16,6 +18,7 @@ const notifications = [
     date: "5m ago",
   },
   {
+    id: 3,
     name: "Jacob Thompson",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-jacob-thompson.webp`,
     operation: "Has joined your group",
@@ -24,6 +27,7 @@ const notifications = [
     date: "1 day ago",
   },
   {
+    id: 4,
     name: "Rizky Hasanuddin",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-rizky-hasanuddin.webp`,
     operation: "sent you a private message",
@@ -34,6 +38,7 @@ const notifications = [
     date: "5 days ago",
   },
   {
+    id: 5,
     name: "Kimberly Smith",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-kimberly-smith.webp`,
     operation: "commented on your picture",
@@ -42,6 +47,7 @@ const notifications = [
     date: "1 week ago",
   },
   {
+    id: 6,
     name: "Nathan Peterson",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-nathan-peterson.webp`,
     operation: "reacted to your recent post",
@@ -50,6 +56,7 @@ const notifications = [
     date: "2 weeks ago",
   },
   {
+    id: 7,
     name: "Anna Kim",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-anna-kim.webp`,
     operation: "left the group",
