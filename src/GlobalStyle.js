@@ -12,4 +12,11 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Plus Jakarta Sans", sans-serif;
   }
+
+  #root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
