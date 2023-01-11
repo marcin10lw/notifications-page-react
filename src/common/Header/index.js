@@ -1,13 +1,26 @@
+import { useDispatch, useSelector } from "react-redux";
 import { StyledHeader, Notifications } from "./styled";
+import {
+  markAllAsRead,
+  selectNotifications,
+} from "../../features/notifications/notificationSlice";
 
-const Header = () => (
-  <StyledHeader>
-    <Notifications>
-      <h2>Notifications</h2>
-      <span>3</span>
-    </Notifications>
-    <button>Mark all as read</button>
-  </StyledHeader>
-);
+const Header = () => {
+  const dispatch = useDispatch();
+  const { notifications } = useSelector(selectNotifications);
+  const unread = notifications.filter((notification) => !notification.read);
+
+  return (
+    <StyledHeader>
+      <Notifications>
+        <h2>Notifications</h2>
+        <span>{unread.length}</span>
+      </Notifications>
+      <button onClick={() => dispatch(markAllAsRead())}>
+        Mark all as read
+      </button>
+    </StyledHeader>
+  );
+};
 
 export default Header;

@@ -7,8 +7,8 @@ import Notification from "./Notification";
 import { selectNotifications } from "./notificationSlice";
 
 function Notifications() {
-  const notifications = useSelector(selectNotifications);
-
+  const { notifications } = useSelector(selectNotifications);
+  
   return (
     <Container>
       <Header />

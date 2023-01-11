@@ -19,6 +19,10 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 25px 15px;
+
+    @media (max-width: ${({ theme }) => theme.mobile}px) {
+      height: auto;
+    }
   }
 `;
