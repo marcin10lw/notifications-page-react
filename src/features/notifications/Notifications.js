@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Container } from "../../common/Container/styled";
 import Header from "../../common/Header";
@@ -8,7 +7,7 @@ import { selectNotifications } from "./notificationSlice";
 
 function Notifications() {
   const { notifications } = useSelector(selectNotifications);
-  
+
   return (
     <Container>
       <Header />
