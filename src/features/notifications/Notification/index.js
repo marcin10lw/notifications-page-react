@@ -1,5 +1,5 @@
 import {
-  Section,
+  StyledNotification,
   Picture,
   Name,
   Info,
@@ -7,6 +7,8 @@ import {
   Operation,
   Linked,
   Date,
+  Message,
+  Dot,
 } from "./styled";
 
 const Notification = ({
@@ -20,18 +22,24 @@ const Notification = ({
   read,
 }) => {
   return (
-    <Section>
+    <StyledNotification>
       <Picture src={picture} />
       <div>
         <Info>
-          <Name>{name}</Name>
+          <Name href="#">{name}</Name>
           {operation && <Operation>{operation}</Operation>}
-          {linked && <Linked>{linked}</Linked>}
+          {linked && <Linked href="#">{linked}</Linked>}
+          {!read && <Dot />}
         </Info>
         <Date>{date}</Date>
+        {message && <Message>{message}</Message>}
       </div>
-      {linkedPhoto && <LinkedPhoto src={linkedPhoto} />}
-    </Section>
+      {linkedPhoto && (
+        <LinkedPhoto href="#">
+          <img src={linkedPhoto} />
+        </LinkedPhoto>
+      )}
+    </StyledNotification>
   );
 };
 
