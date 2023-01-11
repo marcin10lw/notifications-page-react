@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Container } from "../../common/Container/styled";
 import Header from "../../common/Header";
 import { Main } from "../../common/Main/styled";
 import Notification from "./Notification";
-import { notificationsData } from "../../notificationsData";
+import { selectNotifications } from "./notificationSlice";
 
 function Notifications() {
-  const [notifications, setNotifications] = useState(notificationsData);
+  const notifications = useSelector(selectNotifications);
 
   return (
     <Container>
