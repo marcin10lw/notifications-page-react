@@ -42,7 +42,7 @@ export const notificationsData = [
     name: "Kimberly Smith",
     picture: `${process.env.PUBLIC_URL}/assets/images/avatar-kimberly-smith.webp`,
     operation: "commented on your picture",
-    linked: `${process.env.PUBLIC_URL}/assets/images/image-chess.webp`,
+    linkedPhoto: `${process.env.PUBLIC_URL}/assets/images/image-chess.webp`,
     read: true,
     date: "1 week ago",
   },

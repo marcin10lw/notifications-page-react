@@ -14,11 +14,15 @@ function App() {
       <Main>
         {notifications.map((notification) => (
           <Notification
+            key={notification.id}
             picture={notification.picture}
             name={notification.name}
             operation={notification.operation}
             linked={notification.linked}
+            linkedPhoto={notification.linkedPhoto}
+            message={notification.message}
             date={notification.date}
+            read={notification.read}
           />
         ))}
       </Main>
