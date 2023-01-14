@@ -27,7 +27,7 @@ This time I have created notifications page based on one of the numerous challen
 
  ## Check out the demo!
 
-[![](/notifications-readme-icon.png)](https://marcin10lw.github.io/news-page-react/)
+[![](/notifications-readme-icon.png)](https://marcin10lw.github.io/notifications-page-react/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
  
