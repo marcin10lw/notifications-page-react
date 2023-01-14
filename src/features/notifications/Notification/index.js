@@ -35,8 +35,8 @@ const Notification = ({
         {message && <Message>{message}</Message>}
       </div>
       {linkedPhoto && (
-        <LinkedPhoto href="#">
-          <img src={linkedPhoto} />
+        <LinkedPhoto href="#" aria-label="Go to thread">
+          <img src={linkedPhoto} alt="thread photo" />
         </LinkedPhoto>
       )}
     </StyledNotification>
