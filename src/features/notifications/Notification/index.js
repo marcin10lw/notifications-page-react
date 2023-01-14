@@ -23,7 +23,7 @@ const Notification = ({
 }) => {
   return (
     <StyledNotification>
-      <Picture src={picture} />
+      <Picture src={picture} alt="profile" />
       <div>
         <Info>
           <Name href="#">{name}</Name>

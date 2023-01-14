@@ -25,7 +25,7 @@ export const Notifications = styled.div`
   align-items: center;
   gap: 16px;
 
-  h2 {
+  h1 {
     margin: 0;
     font-weight: 800;
     color: ${({theme}) => theme.colors.vdGrayishBlue};

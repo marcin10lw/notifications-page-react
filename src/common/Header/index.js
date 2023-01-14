@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Notifications>
-        <h2>Notifications</h2>
+        <h1>Notifications</h1>
         <span>{unread.length}</span>
       </Notifications>
       <button onClick={() => dispatch(markAllAsRead())}>
