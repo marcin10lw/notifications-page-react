@@ -26,6 +26,7 @@ export const Notifications = styled.div`
   gap: 16px;
 
   h1 {
+    font-size: 24px;
     margin: 0;
     font-weight: 800;
     color: ${({theme}) => theme.colors.vdGrayishBlue};
