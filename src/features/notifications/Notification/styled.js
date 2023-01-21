@@ -4,10 +4,12 @@ export const StyledNotification = styled.article`
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 0.91rem + 0.1vw, 1rem);
 `;
 
 export const Picture = styled.img`
-  max-width: 45px;
+  max-width: clamp(2.5rem, 2.39rem + 0.49vw, 2.8125rem);
   max-height: 45px;
   object-fit: cover;
   cursor: pointer;
