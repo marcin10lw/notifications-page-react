@@ -3,6 +3,11 @@
 ## Description
 
 This time I have created notifications page based on one of the numerous challenges of [Frontend Mentor](https://www.frontendmentor.io/home). This was an excellent learning opportunity in which I could consolidate my state management knowledge.
+
+## Check out the demo!
+
+[![](/notifications-readme-icon.png)](https://marcin10lw.github.io/notifications-page-react/)
+
 ## Technologies used
 
     -REACT.JS
@@ -25,12 +30,7 @@ This time I have created notifications page based on one of the numerous challen
 
 ![](notifications-react-mobile-preview.gif)
 
- ## Check out the demo!
-
-[![](/notifications-readme-icon.png)](https://marcin10lw.github.io/notifications-page-react/)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
- 
 
 ## Available Scripts
 
